@@ -288,6 +288,12 @@ We can create a data frame in Excel and save it as an `.csv` file, for example a
 # load the data
 dissolving <- read_csv("data/tidy/CS1-gastric_juices.csv")
 
+# or create a tidy datafram
+dissolving <-
+  tibble(
+    id = c(1:8),
+    dissolving_time = c(42.7, 43.4, 44.6, 45.1, 45.6, 45.9, 46.8, 47.6)
+  )
 # have a look at the data
 dissolving
 
